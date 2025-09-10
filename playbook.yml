@@ -1,0 +1,9 @@
+---
+- name: Demo playbook from Github
+ hosts: localhost
+ connection: local
+ tasks:
+   - name: Create a file to prove ansible-pull worked
+     copy:
+       content: "Hello from GitHub via ansible-pull! \n\n"
+       dest: /tmp/from_github.txt
